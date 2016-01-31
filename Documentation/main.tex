@@ -1,0 +1,105 @@
+% das Papierformat zuerst
+\documentclass[a4paper, 11pt, oneside]{article}
+
+% deutsche Sonderzeichen benutzen
+\usepackage[ngerman]{babel}
+
+
+\usepackage[ansinew]{inputenc} % german language signes
+\usepackage{amsmath,amssymb,amsfonts,amsthm}    % Typical maths resource packages
+
+\usepackage{graphicx}
+
+\usepackage{hyperref}                           % For creating hyperlinks in cross references
+
+\usepackage{tocbibind}
+\usepackage{fancybox,amssymb,color}
+\usepackage{oubraces}
+
+\usepackage{ltxtable, tabularx, longtable} % important for tables
+
+\usepackage{glossaries}
+\makeglossaries
+
+
+%\usepackage[authoryear]{natbib}                 % literature reference style
+%\usepackage[bf]{caption2}
+
+%\newpsobject{showgrid}{psgrid}{subgriddiv=1,griddots=10,gridlabels=0pt}
+
+\pagestyle{headings}
+
+% hat was mit Abstaenden zu tun
+\frenchspacing
+
+% hier beginnt das Dokument
+
+%Begriffdefinition
+%\newglossaryentry{apf}{name=Apfel, description={Ost aus der Gruppe der Kernobstgewächse}} 
+\loadglsentries{99appendix/glossary.tex}
+
+\begin{document}
+
+%
+% --- Title Page ---
+%
+\thispagestyle{empty}
+\input{01titlepage/titlepage.tex}
+
+%
+% --- Eigenstädnigkeitserklärung ---
+%
+\newpage
+\pagestyle{plain}
+\pagenumbering{roman}   % define page number in roman style
+\setcounter{page}{1}    % start page numbering
+\thispagestyle{empty}
+\input{02confirmation/confirmation.tex}
+
+%
+% --- Abstract / Einleitung ---
+%
+
+\newpage
+\input{03abstract/abstract.tex}
+
+%
+% --- Inhtaltsverzeichnis ---
+%
+\newpage
+\tableofcontents
+\clearpage
+
+
+
+%
+% --- Inhalt der Arbeit ---
+%
+\newpage
+\pagestyle{plain}
+\setcounter{page}{1}    % start page numbering anew
+\pagenumbering{arabic}  % page numbers in arabic style
+
+\input{arch}
+
+\newpage
+
+\section{Einleitung}
+\gls{apf}
+
+%
+% --- Anhang ---
+%
+
+\appendix
+
+% literature
+\newpage
+\addcontentsline{toc}{section}{References}
+\bibliography{literature}
+
+\newpage
+\printglossary[title=Glossar]
+
+
+\end{document}

@@ -1,0 +1,30 @@
+\ifglsentryexists{apf}{}%
+{%
+\gls@defglossaryentry{apf}%
+{%
+name={Apfel},%
+sort={Apfel},%
+type={main},%
+first={Apfel},%
+firstplural={Apfels},%
+text={Apfel},%
+plural={Apfels},%
+description={Ost aus der Gruppe der Kernobstgewächse},%
+descriptionplural={Ost aus der Gruppe der Kernobstgewächse},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%

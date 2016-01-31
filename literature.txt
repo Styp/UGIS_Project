@@ -1,0 +1,5 @@
+http://gis.stackexchange.com/questions/6219/open-source-gis-implementation-of-the-huff-model
+
+http://www.reymann.eu/wettbewerbsanalysen/einzugsgebiet
+
+http://www.esri.com/library/whitepapers/pdfs/calibrating-huff-model.pdf
